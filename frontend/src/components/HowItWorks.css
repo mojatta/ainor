@@ -1,0 +1,71 @@
+.how-it-works {
+  background: white;
+  padding: 80px 20px;
+}
+
+.how-container {
+  max-width: 1120px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.how-title {
+  font-size: 48px;
+  font-weight: 800;
+  color: #1f2937;
+  margin: 0 0 60px 0;
+}
+
+.how-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.how-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding: 32px;
+}
+
+.how-step-number {
+  width: 64px;
+  height: 64px;
+  background: #3B82F6;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.how-step-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0;
+}
+
+.how-step-description {
+  font-size: 16px;
+  color: #6b7280;
+  line-height: 1.6;
+  margin: 0;
+  max-width: 280px;
+}
+
+@media (max-width: 968px) {
+  .how-steps {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .how-title {
+    font-size: 36px;
+  }
+}
+
