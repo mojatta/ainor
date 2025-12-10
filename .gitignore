@@ -6,7 +6,8 @@ build/
 
 .env
 .env.local
+frontend/.env
+frontend/.env.local
 
 .vscode/
 .DS_Store
-node_modules

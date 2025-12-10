@@ -1,33 +1,27 @@
+import dotenv from "dotenv";
+dotenv.config(); // sørg for at .env lastes før vi leser process.env
+
 import OpenAI from "openai";
 import { ChatCompletionMessageParam } from "openai/resources/chat/completions";
 
-let openaiInstance: OpenAI | null = null;
+const apiKey = process.env.OPENAI_API_KEY;
 
-function getOpenAIClient(): OpenAI {
-  if (!openaiInstance) {
-    const apiKey = process.env.OPENAI_API_KEY;
+console.log("Loaded OPENAI_API_KEY prefix + length:", apiKey?.slice(0, 8), apiKey?.length);
 
-    if (!apiKey) {
-      throw new Error(
-        "OPENAI_API_KEY is required. Please set it in your .env file."
-      );
-    }
-
-    openaiInstance = new OpenAI({
-      apiKey
-    });
-  }
-
-  return openaiInstance;
+if (!apiKey) {
+  throw new Error("OPENAI_API_KEY is required. Set it in your .env file.");
 }
+
+export const openai = new OpenAI({
+  apiKey,
+});
 
 export async function createChatCompletion(
   messages: ChatCompletionMessageParam[]
 ): Promise<ChatCompletionMessageParam> {
-  const openai = getOpenAIClient();
 
   const response = await openai.chat.completions.create({
-    model: "gpt-4.1-mini",
+    model: "gpt-4o-mini",
     messages
   });
 
