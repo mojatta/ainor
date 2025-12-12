@@ -37,7 +37,7 @@ export function useSpeechRecognition({ onResult, language: defaultLanguage = "en
     recognition.onerror = () => setStatus("error");
     recognition.onend = () => setStatus("idle");
 
-    recognition.onresult = (event: SpeechRecognitionEvent) => {
+    recognition.onresult = (event: any) => {
       let transcript = "";
       for (let i = 0; i < event.results.length; i++) {
         transcript += event.results[i][0].transcript;
