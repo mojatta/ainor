@@ -1,4 +1,5 @@
 import express, { Request, Response } from "express";
+import cors from "cors";
 import dotenv from "dotenv";
 import { handleChat, ChatMessage } from "./agent/handleChat";
 
@@ -9,16 +10,24 @@ dotenv.config();
 const app = express();
 const port = process.env.PORT || 3001;
 
-// Enable CORS for frontend
-app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "http://localhost:3000");
-  res.header("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
-  res.header("Access-Control-Allow-Headers", "Content-Type");
-  if (req.method === "OPTIONS") {
-    return res.sendStatus(200);
-  }
-  next();
-});
+// Configure CORS
+const corsOptions = {
+  origin: [
+    "https://ai-nor.no",
+    "https://www.ai-nor.no",
+    "https://ainor.netlify.app",
+    "http://localhost:3000" // for local development
+  ],
+  methods: ["GET", "POST", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+  credentials: false
+};
+
+// Handle preflight requests
+app.options("*", cors(corsOptions));
+
+// Apply CORS middleware before all routes
+app.use(cors(corsOptions));
 
 app.use(express.json());
 
