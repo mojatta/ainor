@@ -16,3 +16,5 @@ export function detectLanguage(text: string): "nb" | "en" {
   return "en";
 }
 
+
+
