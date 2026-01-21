@@ -8,35 +8,32 @@ export default function SetupSteps() {
           <div className="setup-image-placeholder">🍽️</div>
         </div>
         <div className="setup-content">
-          <h2 className="setup-title">Get set up in 30 minutes</h2>
+          <h2 className="setup-title">Kom i gang på 30 minutter</h2>
           <div className="steps-list">
             <div className="step-item">
               <div className="step-number">1</div>
               <div className="step-content">
-                <h3 className="step-title">Schedule Your Demo</h3>
+                <h3 className="step-title">Book Din Demo</h3>
                 <p className="step-description">
-                  Book a quick call with our team to see AINOR in action and discuss
-                  your restaurant's needs.
+                  Book en rask samtale med teamet vårt for å se AINOR i aksjon og diskutere restaurantens behov.
                 </p>
               </div>
             </div>
             <div className="step-item">
               <div className="step-number">2</div>
               <div className="step-content">
-                <h3 className="step-title">Connect AINOR to Your Restaurant</h3>
+                <h3 className="step-title">Koble AINOR til Restauranten Din</h3>
                 <p className="step-description">
-                  We'll integrate AINOR with your reservation system, POS, or calendar. Simple
-                  API connections that take minutes.
+                  Vi integrerer AINOR med reservasjonssystemet, kassasystemet eller kalenderen din. Enkle API-tilkoblinger som tar minutter.
                 </p>
               </div>
             </div>
             <div className="step-item">
               <div className="step-number">3</div>
               <div className="step-content">
-                <h3 className="step-title">Never Miss a Call Again</h3>
+                <h3 className="step-title">Gå Aldri Glipp av Et Anrop Igjen</h3>
                 <p className="step-description">
-                  AINOR goes live and starts answering calls and chats immediately.
-                  No training period needed.
+                  AINOR går live og begynner å svare på anrop og chat umiddelbart. Ingen opplæringsperiode nødvendig.
                 </p>
               </div>
             </div>
@@ -46,4 +43,5 @@ export default function SetupSteps() {
     </section>
   );
 }
+
 

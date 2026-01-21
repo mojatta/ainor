@@ -1,29 +1,33 @@
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Benefits from "./components/Benefits";
-import SetupSteps from "./components/SetupSteps";
-import WhySection from "./components/WhySection";
-import HowItWorks from "./components/HowItWorks";
-import FaqSection from "./components/FaqSection";
-import CallToAction from "./components/CallToAction";
-import Footer from "./components/Footer";
-import ChatWidget from "./components/ChatWidget";
-import "./App.css";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import HomePage from './components/HomePage';
+import DashboardLogin from './pages/dashboard/Login';
+import Dashboard from './pages/dashboard/Dashboard';
+import ReservationDetail from './pages/dashboard/ReservationDetail';
+import AinorAdminLogin from './pages/ainor-admin/Login';
+import AinorAdminOverview from './pages/ainor-admin/Overview';
+import CreateRestaurant from './pages/ainor-admin/CreateRestaurant';
+import RestaurantDetails from './pages/ainor-admin/RestaurantDetails';
+import './App.css';
 
 function App() {
   return (
-    <div className="app">
-      <Navbar />
-      <Hero />
-      <Benefits />
-      <SetupSteps />
-      <WhySection />
-      <HowItWorks />
-      <FaqSection />
-      <CallToAction />
-      <Footer />
-      <ChatWidget />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        {/* Existing homepage - kept exactly as-is */}
+        <Route path="/" element={<HomePage />} />
+        
+        {/* Dashboard routes */}
+        <Route path="/dashboard/login" element={<DashboardLogin />} />
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/dashboard/reservations/:reservationId" element={<ReservationDetail />} />
+        
+        {/* AINOR Admin routes */}
+        <Route path="/ainor-admin/login" element={<AinorAdminLogin />} />
+        <Route path="/ainor-admin" element={<AinorAdminOverview />} />
+        <Route path="/ainor-admin/restaurants/new" element={<CreateRestaurant />} />
+        <Route path="/ainor-admin/restaurants/:id" element={<RestaurantDetails />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

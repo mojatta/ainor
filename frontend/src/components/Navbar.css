@@ -17,13 +17,16 @@
 }
 
 .navbar-logo {
-  font-size: 20px;
-  font-weight: 700;
-  background: linear-gradient(135deg, #3B82F6 0%, #8B5CF6 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  display: flex;
+  align-items: center;
   cursor: pointer;
+  text-decoration: none;
+}
+
+.navbar-logo img {
+  height: 40px;
+  width: auto;
+  display: block;
 }
 
 .navbar-links {
