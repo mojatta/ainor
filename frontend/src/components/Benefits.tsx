@@ -6,28 +6,28 @@ export default function Benefits() {
       <div className="benefits-container">
         <div className="benefit-card">
           <div className="benefit-icon">💰</div>
-          <h3 className="benefit-title">Boost Revenue Automatically</h3>
+          <h3 className="benefit-title">Øk Inntektene Automatisk</h3>
           <p className="benefit-description">
-            AINOR captures <strong>every reservation</strong> opportunity, even when your staff is busy. Never miss a call or chat message again.
+            AINOR fanger opp <strong>hver reservasjonsmulighet</strong>, selv når personalet ditt er opptatt. Går aldri glipp av et anrop eller chatmelding igjen.
           </p>
         </div>
         <div className="benefit-card">
           <div className="benefit-icon">⚡</div>
-          <h3 className="benefit-title">Maximize Staff Efficiency</h3>
+          <h3 className="benefit-title">Maksimer Personalets Effektivitet</h3>
           <p className="benefit-description">
-            Free your team from repetitive calls. AINOR handles routine bookings while
-            staff focuses on <strong>guest experience</strong>.
+            Frigjør teamet ditt fra repeterende anrop. AINOR håndterer rutinebestillinger mens personalet fokuserer på <strong>gjesteopplevelsen</strong>.
           </p>
         </div>
         <div className="benefit-card">
           <div className="benefit-icon">🚀</div>
-          <h3 className="benefit-title">Instant Answers, 24/7</h3>
+          <h3 className="benefit-title">Øyeblikkelige Svar, 24/7</h3>
           <p className="benefit-description">
-            AINOR answers every call and chat instantly, <strong>24/7</strong>. Guests get immediate responses, and reservations are confirmed automatically.
+            AINOR svarer på hvert anrop og chat umiddelbart, <strong>24/7</strong>. Gjester får umiddelbare svar, og reservasjoner bekreftes automatisk.
           </p>
         </div>
       </div>
     </section>
   );
 }
+
 

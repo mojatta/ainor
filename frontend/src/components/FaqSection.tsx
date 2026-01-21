@@ -8,36 +8,36 @@ interface FaqItem {
 
 const faqs: FaqItem[] = [
   {
-    question: "What are the benefits of using AINOR?",
-    answer: "AINOR helps restaurants increase revenue by capturing every reservation opportunity, reduces staff workload by handling routine calls, and provides 24/7 availability. It also offers real-time analytics and can handle multiple languages to serve international guests."
+    question: "Hva er fordelene med å bruke AINOR?",
+    answer: "AINOR hjelper restauranter med å øke inntektene ved å fange opp hver reservasjonsmulighet, reduserer personalbelastningen ved å håndtere rutineanrop og gir 24/7-tilgjengelighet. Den tilbyr også sanntidsanalyse og kan håndtere flere språk for å betjene internasjonale gjester."
   },
   {
-    question: "Does AINOR integrate with reservation platforms?",
-    answer: "Yes! AINOR integrates with popular reservation systems like OpenTable, Resy, Tock, and custom booking platforms via API. We also work with POS systems like Toast, Square, and Clover for menu synchronization."
+    question: "Integrerer AINOR seg med reservasjonsplattformer?",
+    answer: "Ja! AINOR integrerer seg med populære reservasjonssystemer som OpenTable, Resy, Tock og tilpassede bestillingsplattformer via API. Vi jobber også med kassasystemer som Toast, Square og Clover for meny-synkronisering."
   },
   {
-    question: "Can I customize AINOR's voice?",
-    answer: "Absolutely! You can customize AINOR's tone, add your restaurant's personality, set specific phrases or greetings, and configure how it handles different scenarios. Make AINOR sound like your brand."
+    question: "Kan jeg tilpasse AINORs stemme?",
+    answer: "Absolutt! Du kan tilpasse AINORs tone, legge til restaurantens personlighet, sette spesifikke fraser eller hilsener og konfigurere hvordan den håndterer ulike scenarier. Få AINOR til å høres ut som merkevaren din."
   },
   {
-    question: "How many calls can AINOR handle at once?",
-    answer: "AINOR can handle unlimited concurrent calls and chat messages. There's no limit to how many guests can interact with AINOR simultaneously, ensuring you never miss a reservation opportunity."
+    question: "Hvor mange anrop kan AINOR håndtere samtidig?",
+    answer: "AINOR kan håndtere ubegrenset samtidige anrop og chatmeldinger. Det er ingen grense for hvor mange gjester som kan samhandle med AINOR samtidig, noe som sikrer at du aldri går glipp av en reservasjonsmulighet."
   },
   {
-    question: "How does AINOR handle complex reservation requests?",
-    answer: "AINOR is trained specifically on restaurant conversations and can handle party sizes, special occasions, dietary restrictions, and time preferences. It asks clarifying questions when needed and confirms all details before booking."
+    question: "Hvordan håndterer AINOR komplekse reservasjonsforespørsler?",
+    answer: "AINOR er trent spesifikt på restaurant-samtaler og kan håndtere antall personer, spesielle anledninger, kostholdsrestriksjoner og tidspreferanser. Den spør avklarende spørsmål når det trengs og bekrefter alle detaljer før booking."
   },
   {
-    question: "What happens if AINOR can't answer a question?",
-    answer: "If AINOR encounters something it's unsure about, it will politely ask the guest to contact the restaurant directly or transfer them to a human staff member. You can also set up escalation rules for complex situations."
+    question: "Hva skjer hvis AINOR ikke kan svare på et spørsmål?",
+    answer: "Hvis AINOR støter på noe den ikke er sikker på, vil den høflig be gjesten om å kontakte restauranten direkte eller overføre dem til en menneskelig medarbeider. Du kan også sette opp eskaleringsregler for komplekse situasjoner."
   },
   {
-    question: "How long does it take to set up AINOR?",
-    answer: "Most restaurants are up and running in 30 minutes. We'll help you connect your reservation system, upload your menu, set your opening hours, and configure any special instructions. No technical expertise required."
+    question: "Hvor lang tid tar det å sette opp AINOR?",
+    answer: "De fleste restauranter er i gang på 30 minutter. Vi hjelper deg med å koble til reservasjonssystemet, laste opp menyen, sette åpningstidene og konfigurere spesielle instruksjoner. Ingen teknisk ekspertise kreves."
   },
   {
-    question: "Is there a contract or long-term commitment?",
-    answer: "No long-term contracts. You can cancel anytime. We offer monthly and annual plans, with discounts for annual commitments. Start with a free trial to see if AINOR works for your restaurant."
+    question: "Finnes det en kontrakt eller langtidsforpliktelse?",
+    answer: "Ingen langtidskontrakter. Du kan kansellere når som helst. Vi tilbyr månedlige og årlige planer, med rabatter for årlige forpliktelser. Start med en gratis prøveversjon for å se om AINOR fungerer for restauranten din."
   }
 ];
 
@@ -51,7 +51,7 @@ export default function FaqSection() {
   return (
     <section id="faq" className="faq-section">
       <div className="faq-container">
-        <h2 className="faq-title">Frequently asked questions</h2>
+        <h2 className="faq-title">Ofte Stilte Spørsmål</h2>
         <div className="faq-grid">
           {faqs.map((faq, index) => (
             <div key={index} className="faq-item">
@@ -73,3 +73,5 @@ export default function FaqSection() {
     </section>
   );
 }
+
+

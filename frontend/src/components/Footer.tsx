@@ -7,28 +7,28 @@ export default function Footer() {
         <div className="footer-column">
           <div className="footer-logo">AINOR</div>
           <p className="footer-description">
-            AI Voice & Chat Assistant for Restaurants. AINOR never misses a call or reservation.
+            AI Stemme- og Chat-Assistent for Restauranter. AINOR går aldri glipp av et anrop eller en reservasjon.
           </p>
         </div>
         <div className="footer-column">
-          <h4 className="footer-heading">Jump to it</h4>
+          <h4 className="footer-heading">Hopp til</h4>
           <ul className="footer-links">
-            <li><a href="#product">Product</a></li>
-            <li><a href="#how-it-works">How it works</a></li>
-            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#product">Produkt</a></li>
+            <li><a href="#how-it-works">Slik fungerer det</a></li>
+            <li><a href="#pricing">Priser</a></li>
             <li><a href="#faq">FAQ</a></li>
           </ul>
         </div>
         <div className="footer-column">
-          <h4 className="footer-heading">Company</h4>
+          <h4 className="footer-heading">Selskap</h4>
           <ul className="footer-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#docs">Docs</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">Om oss</a></li>
+            <li><a href="#docs">Dokumentasjon</a></li>
+            <li><a href="#contact">Kontakt</a></li>
           </ul>
         </div>
         <div className="footer-column">
-          <h4 className="footer-heading">Follow us</h4>
+          <h4 className="footer-heading">Følg oss</h4>
           <div className="footer-social">
             <a href="#" aria-label="LinkedIn">🔗</a>
             <a href="#" aria-label="Twitter">🐦</a>
@@ -36,9 +36,10 @@ export default function Footer() {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>&copy; 2024 AINOR. All rights reserved.</p>
+        <p>&copy; 2024 AINOR. Alle rettigheter reservert.</p>
       </div>
     </footer>
   );
 }
+
 

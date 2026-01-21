@@ -4,13 +4,14 @@ export default function CallToAction() {
   return (
     <section id="cta" className="cta-section">
       <div className="cta-container">
-        <h2 className="cta-title">Ready to try AINOR?</h2>
+        <h2 className="cta-title">Klar til å prøve AINOR?</h2>
         <p className="cta-description">
-          Join hundreds of restaurants using AINOR to never miss a reservation.
+          Bli med hundrevis av restauranter som bruker AINOR for aldri å gå glipp av en reservasjon.
         </p>
-        <button className="btn-cta">Get Started with AINOR</button>
+        <button className="btn-cta">Kom i Gang med AINOR</button>
       </div>
     </section>
   );
 }
+
 
